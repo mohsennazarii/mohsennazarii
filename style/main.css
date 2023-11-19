@@ -544,6 +544,57 @@ img {
   background-color: rgb(140, 79, 55);
 }
 
+#certificates .container .card{
+  width: 60%;
+  text-align: center;
+}
+
+#certificates .container .content-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 15px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 880px;
+}
+
+
+#certificates .center{
+  width: 100%;
+  margin-left: 50%;
+}
+
+#certificates img{
+  border-radius: 8px;
+}
+
+.indicator{
+  top: 95%;
+}
+
+.indicator [data-bs-target]{
+  background-color: #000000;
+  border-bottom: none;
+}
+
+
+@media screen and (max-width: 991px) {
+
+  #certificates .container .card{
+    width: 85%; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #certificates .container .card{
+    width: 95%; 
+  }
+}
+
 .footer {
   padding: 24px 0;
 }
@@ -1611,6 +1662,9 @@ img {
   .footer .copyright {
     float: right;
   }
+
+
+
 }
 
 .navbar {

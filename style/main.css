@@ -1,4 +1,3 @@
-
 .btn,
 .navbar .navbar-nav > a.btn {
   border-width: 2px;
@@ -544,12 +543,12 @@ img {
   background-color: rgb(140, 79, 55);
 }
 
-#certificates .container .card{
+#certificates .container .card {
   width: 60%;
   text-align: center;
 }
 
-#certificates .container .content-center{
+#certificates .container .content-center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -561,37 +560,46 @@ img {
   max-width: 880px;
 }
 
-
-#certificates .center{
+#certificates .center {
   width: 100%;
   margin-left: 50%;
 }
 
-#certificates img{
+#certificates img {
   border-radius: 8px;
 }
 
-.indicator{
+.indicator {
   top: 95%;
 }
 
-.indicator [data-bs-target]{
+.indicator [data-bs-target] {
   background-color: #000000;
   border-bottom: none;
 }
 
+.card-header-nocontent,
+.card-body-nocontent {
+  padding-bottom: 0px !important;
+  padding-top: 10px !important;
+  min-height: 0 !important;
+}
 
 @media screen and (max-width: 991px) {
-
-  #certificates .container .card{
-    width: 85%; 
+  #certificates .container .card {
+    width: 85%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .card-header-nocontent {
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x) !important;
+    padding-top: 60px !important;
+    min-height: 190px !important;
+  }
 
-  #certificates .container .card{
-    width: 95%; 
+  #certificates .container .card {
+    width: 95%;
   }
 }
 
@@ -834,8 +842,6 @@ img {
 .clear-filter:before {
   display: none;
 }
-
-
 
 @media screen and (max-width: 991px) {
   .sidebar-collapse .navbar-collapse {
@@ -1662,9 +1668,6 @@ img {
   .footer .copyright {
     float: right;
   }
-
-
-
 }
 
 .navbar {

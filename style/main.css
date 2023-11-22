@@ -1,3 +1,4 @@
+
 .btn,
 .navbar .navbar-nav > a.btn {
   border-width: 2px;
@@ -448,9 +449,18 @@ body {
 .navbar .navbar-toggler {
   width: 37px;
   height: 27px;
+  border: 0;
+
   outline: 0;
   cursor: pointer;
 }
+
+.navbar-toggler:focus{
+  border: 0;
+  box-shadow: none;
+ 
+}
+
 .navbar .navbar-toggler.navbar-toggler-left {
   position: relative;
   left: 0;

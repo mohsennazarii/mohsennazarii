@@ -20,7 +20,7 @@ if (!isChrome) {
           {
             scrollTop: target.offset().top,
           },
-          0,
+          800,
           function () {
             var $target = $(target);
             $target.trigger("focus");

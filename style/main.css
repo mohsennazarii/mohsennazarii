@@ -1,4 +1,3 @@
-
 .btn,
 .navbar .navbar-nav > a.btn {
   border-width: 2px;
@@ -439,12 +438,32 @@ body {
   border-radius: 1.4875rem;
 }
 
+.navbar {
+  padding: 0;
+}
+
+.brand {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .navbar .navbar-brand {
   text-transform: uppercase;
-  font-size: 0.8571em;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  font-size: 0.9371em;
+  /* padding-top: 0.5rem; */
+  /* padding-bottom: 0.5rem; */
   line-height: 1.625rem;
+  float: right;
+}
+
+#brand-logo {
+  background: url("./../favicon.ico") no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  z-index: 100000;
+  margin-right: 6px;
 }
 .navbar .navbar-toggler {
   width: 37px;
@@ -455,10 +474,9 @@ body {
   cursor: pointer;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
   border: 0;
   box-shadow: none;
- 
 }
 
 .navbar .navbar-toggler.navbar-toggler-left {
@@ -553,6 +571,65 @@ img {
   background-color: rgb(140, 79, 55);
 }
 
+#topskills .container .card {
+  width: 60%;
+  min-height: 500px;
+  text-align: center;
+  margin-bottom: 28px;
+  padding: 12px;
+}
+
+#topskills .container .content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 15px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 880px;
+}
+
+#topskills .center {
+  width: 100%;
+  margin-left: 50%;
+}
+
+#topskills .container > .card .card-body {
+  /* height: min-content; */
+  min-height: auto;
+}
+
+#topskills .container > .card .card {
+  height: 40%;
+  min-height: 10%;
+  margin: 0;
+  /* margin-left: 5%; */
+  padding: 0;
+  width: 40%;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+#topskills .container > .card .card p {
+  margin: 0;
+}
+
+#topskills .container > .card .row .row {
+  /* flex-wrap: wrap;
+  justify-content: space-around; */
+}
+
+#topskills .container > .card .card p::before {
+  content: "•";
+  width: 30%;
+  color: #000000;
+  /* display: inline; */
+  font-size: medium;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
 #certificates .container .card {
   width: 60%;
   text-align: center;
@@ -599,6 +676,10 @@ img {
   #certificates .container .card {
     width: 85%;
   }
+  #topskills .container > .card {
+    /* height: min-content; */
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -609,6 +690,10 @@ img {
   }
 
   #certificates .container .card {
+    width: 95%;
+  }
+  #topskills .container > .card {
+    /* height: min-content; */
     width: 95%;
   }
 }
@@ -820,6 +905,10 @@ img {
   color: #ffffff;
   width: 100%;
   max-width: 880px;
+}
+
+.page-header .container > .content-center p {
+  margin-bottom: 0;
 }
 .page-header .category,
 .page-header .description {

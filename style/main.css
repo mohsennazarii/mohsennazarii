@@ -573,10 +573,13 @@ img {
 
 #topskills .container .card {
   width: 60%;
-  min-height: 500px;
+  min-height: fit-content;
   text-align: center;
+  display: block;
   margin-bottom: 28px;
   padding: 12px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #topskills .container .content-center {
@@ -594,6 +597,7 @@ img {
 #topskills .center {
   width: 100%;
   margin-left: 50%;
+  margin-right: 50%;
 }
 
 #topskills .container > .card .card-body {
@@ -604,7 +608,7 @@ img {
 #topskills .container > .card .card {
   height: 40%;
   min-height: 10%;
-  margin: 0;
+  margin: 5px;
   /* margin-left: 5%; */
   padding: 0;
   width: 40%;
@@ -615,9 +619,9 @@ img {
   margin: 0;
 }
 
-#topskills .container > .card .row .row {
-  /* flex-wrap: wrap;
-  justify-content: space-around; */
+#topskills .container > .card .row {
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #topskills .container > .card .card p::before {
@@ -692,9 +696,15 @@ img {
   #certificates .container .card {
     width: 95%;
   }
-  #topskills .container > .card {
+  #topskills .container > .card .card{
     /* height: min-content; */
-    width: 95%;
+    width: 85%;
+    margin-bottom: 10px;
+  }
+  #topskills .container > .card .row{
+    flex-direction: column;
+    align-content: space-around;
+
   }
 }
 

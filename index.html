@@ -516,47 +516,11 @@
                   class="carousel slide"
                   data-bs-ride="carousel"
                 >
-                  <div class="carousel-indicators indicator">
-                    <button
-                      type="button"
-                      data-bs-target="#sliderImage"
-                      data-bs-slide-to="0"
-                      aria-label="Slide 1"
-                      class="active"
-                      aria-corrent="true"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#sliderImage"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
+                  <div class="carousel-indicators indicator" id="indicators">
+                    <INDICATEBUTTON>
                   </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                      <a
-                        href="./certificates/PMP-Certificate.jpg"
-                        target="_blank"
-                      >
-                        <img
-                          src="./certificates/PMP-Certificate.jpg"
-                          alt=""
-                          class="d-block w-100"
-                        />
-                      </a>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <a
-                        href="./certificates/PMP-Certificate.jpg"
-                        target="_blank"
-                      >
-                        <img
-                          src="./certificates/PMP-Certificate.jpg"
-                          alt=""
-                          class="d-block w-100"
-                        />
-                      </a>
-                    </div>
+                  <div class="carousel-inner" id="certificateImages">
+                    <CERTIFICATEIMAGE>
                   </div>
                 </div>
               </div>
@@ -663,5 +627,7 @@
     <script src="scripts/now-ui-kit.js?ver=1.1.0"></script>
     <script src="scripts/aos.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="certificates/addCertificateImages.js"></script>
+    
   </body>
 </html>
